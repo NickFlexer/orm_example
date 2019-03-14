@@ -7,7 +7,7 @@ db = Database()
 
 
 class RoomType(db.Entity):
-    max_persone = Required(int)
+    max_person = Required(int)
     description = Required(str, unique=True)
     rooms = Optional("Rooms")
 
