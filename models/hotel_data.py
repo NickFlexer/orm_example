@@ -20,7 +20,7 @@ class Cities(db.Entity):
 class Hotels(db.Entity):
     name = Required(str, unique=True)
     star_rating = Required(int)
-    city = Optional(Cities)
+    city = Required(Cities)
     rooms = Optional("Rooms")
 
 
